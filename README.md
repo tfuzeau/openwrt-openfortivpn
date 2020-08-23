@@ -4,10 +4,10 @@ OpenWRT package for [openfortivpn: A Fortinet (and Ruijie) compatible client for
 ## Build
 Example for ar71xx and trunk.
 ```
-wget http://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-SDK-ar71xx-generic_gcc-4.8-linaro_musl-1.1.11.Linux-x86_64.tar.bz2
-tar jxf OpenWrt-SDK-ar71xx-generic_gcc-4.8-linaro_musl-1.1.11.Linux-x86_64.tar.bz2
-cd OpenWrt-SDK-ar71xx-generic_gcc-4.8-linaro_musl-1.1.11.Linux-x86_64/package
-git clone https://github.com/excelwang/openwrt-openfortivpn openfortivpn
+wget https://downloads.openwrt.org/releases/19.07.3/targets/ar71xx/generic/openwrt-sdk-19.07.3-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
+tar xf openwrt-sdk-19.07.3-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
+cd openwrt-sdk-19.07.3-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64/package
+git clone https://github.com/tfuzeau/openwrt-openfortivpn openfortivpn
 cd ..
 ./scripts/feeds update base
 ./scripts/feeds install libopenssl resolveip ppp
